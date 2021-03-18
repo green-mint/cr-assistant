@@ -3,7 +3,7 @@ const fs = require('fs');
 
 venom
   .create()
-  .then((client) => start(client))
+  .then((client) => remind(client))
   .catch((erro) => {
     console.log(erro);
   });
@@ -47,4 +47,3 @@ function getDeadlines() {
   }
   return message;
 }
-
