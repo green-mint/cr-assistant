@@ -19,7 +19,7 @@ async function remind(client) {
             delay = 8.54e+7 // approximately 0.9 day
             let message = getDeadlines();
             await client
-              .sendText('923165192717-1558982529@g.us', message)
+              .sendText('923335123480-1604684138@g.us', message)
               .then((result) => {
                 console.log('Result: ', result); //return object success
               })
@@ -36,14 +36,14 @@ async function remind(client) {
 
 function getDeadlines() {
   let rawdata = fs.readFileSync('tasks.json');
-  let message = ``;
+  let message = `DEADLINES REMINDER:\n`;
   deadlines = JSON.parse(rawdata);
+
 
   for (var subject in deadlines) {
     for (var task in deadlines[subject]) {
-      message = message.concat(`The deadline for ${subject} ${task} is ${deadlines[subject][task]}\n`)
+      message = message.concat(`Subject: ${subject} ${task}:\n ${deadlines[subject][task]}\n`)
     }
   }
   return message;
 }
-
