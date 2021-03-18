@@ -1,0 +1,29 @@
+{
+  "name": "cr-assistant",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "config": "^3.3.6",
+    "venom-bot": "^3.0.11"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/green-mint/cr-assistant.git"
+  },
+  "keywords": [
+    "venom-bot",
+    "nodejs",
+    "whatsapp-bot"
+  ],
+  "author": "M. Saad ur Rehman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/green-mint/cr-assistant/issues"
+  },
+  "homepage": "https://github.com/green-mint/cr-assistant#readme"
+}
